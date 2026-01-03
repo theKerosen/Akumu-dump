@@ -1,0 +1,7 @@
+:[0]
+push.s "UP"@994
+pop.v.s builtin.directionspawn
+pushi.e 1
+pop.v.b builtin.canSpawn
+
+:[end]

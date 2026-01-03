@@ -1,0 +1,1 @@
+myDialogue = "Dad's diploma.";

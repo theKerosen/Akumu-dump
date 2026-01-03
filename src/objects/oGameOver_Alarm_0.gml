@@ -1,0 +1,1 @@
+canFade = true;

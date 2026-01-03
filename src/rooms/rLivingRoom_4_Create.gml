@@ -1,0 +1,1 @@
+myDialogue = "Nothing special.";

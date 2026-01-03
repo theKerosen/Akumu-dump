@@ -1,0 +1,1 @@
+myDialogue = "It's raining.";

@@ -1,0 +1,7 @@
+:[0]
+call.i event_inherited(argc=0)
+popz.v
+pushi.e 0
+pop.v.i self._prop_id
+
+:[end]

@@ -1,0 +1,1 @@
+myDialogue = "Things I keep.";

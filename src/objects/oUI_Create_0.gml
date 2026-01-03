@@ -1,0 +1,12 @@
+depth = -99999;
+pauseOption = ["Continue", "Quit", "Quit to Desktop"];
+arrowImageSpeed = 1/120;
+arrowImage = 0;
+pauseOptionSelected = 0;
+fuel = 50;
+burn_interval = 180;
+burn_timer = 0;
+fuel_max = fuel;
+decrease = false;
+fuelbar_width = 64;
+fuelbar_height = 12;

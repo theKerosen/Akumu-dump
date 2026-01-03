@@ -1,0 +1,17 @@
+depth = -999994;
+pages = -4;
+global.textComplete = false;
+page = 0;
+textSide = 7;
+textOnDisplay = "";
+textImage = 0;
+textImageSpeed = 0.11666666666666667;
+arrowImage = 0;
+arrowImageSpeed = 1/120;
+callback = -4;
+value = 5;
+text_progress = 0;
+pause = false;
+hasAudio = false;
+Speaker = "";
+canSkip = true;

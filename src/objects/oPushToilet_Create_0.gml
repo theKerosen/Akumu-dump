@@ -1,0 +1,11 @@
+tile_size_ = 16;
+speed_ = 1;
+is_moving = false;
+target_x = x;
+target_y = y;
+startX = 0;
+startY = 0;
+destX = "";
+destY = "";
+moveable = true;
+moveRoom = 0;

@@ -1,0 +1,14 @@
+depth = -99999999;
+digit_count = 5;
+input_digits = array_create(digit_count, 0);
+digit_index = 0;
+correct_code = [8, 3, 5, 9, 6];
+forest_code = [3, 1, 0, 1, 3];
+monster_code = [6, 6, 6, 6, 6];
+input_delay = 0;
+code_status = 0;
+arrowImage = 0;
+arrowImageSpeed = 1/120;
+bgImage = 0;
+bgImageSpeed = 0.16666666666666666;
+designedSprite = sPassword;

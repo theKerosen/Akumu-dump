@@ -1,0 +1,16 @@
+state = 0;
+inicialDialogue = undefined;
+myDialogue = undefined;
+myDialogue2 = undefined;
+myDialogue3 = undefined;
+myDialogue4 = undefined;
+myDialogue5 = undefined;
+myDialogue6 = undefined;
+myDialogue7 = undefined;
+myDialogue8 = undefined;
+myDialogue9 = undefined;
+myDialogue10 = undefined;
+normalCallback = scrFinishCharacterReading;
+basement = 0;
+debounce = false;
+depth = -bbox_bottom;

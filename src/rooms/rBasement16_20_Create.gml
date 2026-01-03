@@ -1,0 +1,2 @@
+canTurn = true;
+light = true;

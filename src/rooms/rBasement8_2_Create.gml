@@ -1,0 +1,1 @@
+inicialDialogue = "Just old books.";

@@ -1,0 +1,9 @@
+screwlock = 10;
+screwopen = 0;
+panelTag = "screw";
+play = false;
+canDraw = false;
+designedSprite = sPanelClose;
+bgImageSpeed = 0.25;
+bgImage = 0;
+canEnter = true;

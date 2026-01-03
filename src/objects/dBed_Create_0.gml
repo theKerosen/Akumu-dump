@@ -1,0 +1,9 @@
+state = 0;
+image_speed = 0;
+entrando = false;
+saindo = false;
+deitado = false;
+targetRoom = 0;
+targetX = 0;
+targetY = 0;
+targetFace = 0;

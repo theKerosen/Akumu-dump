@@ -1,0 +1,43 @@
+:[0]
+pushi.e 0
+pop.v.b builtin.entering
+pushi.e 0
+pop.v.b builtin.locked
+pushi.e 0
+pop.v.b builtin.canPlay
+pushi.e 0
+pop.v.b builtin.leaving
+pushi.e 0
+pop.v.b builtin.inside
+pushi.e 1
+pop.v.b builtin.canEnter
+pushi.e 0
+pop.v.b builtin.canPress
+pushi.e 0
+pop.v.i builtin.enterImage
+pushi.e 0
+pop.v.i builtin.animImage
+push.d 0.16666666666666666
+pop.v.d builtin.animImageSpeed
+push.d 0.5
+pop.v.d builtin.enterImageSpeed
+pushi.e 0
+pop.v.b builtin.play
+pushi.e 0
+pop.v.i builtin.storedX
+pushi.e 0
+pop.v.i builtin.storedY
+push.d 0.3
+pop.v.d builtin.animLockerSpeed
+pushi.e 0
+pop.v.i builtin.lockerAnim
+pushi.e 0
+pop.v.b builtin.lockerClosing
+pushi.e 0
+pop.v.b builtin.lockerOpening
+pushi.e 0
+pop.v.i builtin.image_index
+pushi.e 0
+pop.v.i builtin.image_speed
+
+:[end]

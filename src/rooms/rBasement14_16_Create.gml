@@ -1,0 +1,1 @@
+directionspawn = "DOWN";

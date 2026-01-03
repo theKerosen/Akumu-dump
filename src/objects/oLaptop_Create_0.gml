@@ -1,0 +1,9 @@
+state = 0;
+opSelected = 1;
+mymessage = 0;
+mysnd = 0;
+depth = -bbox_bottom;
+played = false;
+canTurn = true;
+total_slots = 11;
+global.any_save_exists = false;

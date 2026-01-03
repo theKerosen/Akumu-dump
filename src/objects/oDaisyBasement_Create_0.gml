@@ -1,0 +1,9 @@
+previous_x = x;
+previous_y = y;
+path = path_add();
+canAppear = 0;
+deb = false;
+deb2 = false;
+canRun = false;
+play = false;
+deb3 = 0;

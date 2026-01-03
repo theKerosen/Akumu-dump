@@ -1,0 +1,10 @@
+lock = -4;
+doorTag = -4;
+canPlay = false;
+debounce = false;
+image_speed = 0;
+state = 0;
+depth = -bbox_bottom;
+myDialogue = 0;
+myDialogue2 = 0;
+myDialogue3 = 0;

@@ -1,0 +1,1 @@
+inicialDialogue = "Nothing interesting.";

@@ -1,0 +1,52 @@
+precision mediump float;
+#define LOWPREC lowp
+// Uniforms look like they're shared between vertex and fragment shaders in GLSL, so we have to be careful to avoid name clashes
+
+uniform sampler2D gm_BaseTexture;
+
+uniform bool gm_PS_FogEnabled;
+uniform vec4 gm_FogColour;
+uniform bool gm_AlphaTestEnabled;
+uniform float gm_AlphaRefValue;
+
+void DoAlphaTest(vec4 SrcColour)
+{
+	if (gm_AlphaTestEnabled)
+	{
+		if (SrcColour.a <= gm_AlphaRefValue)
+		{
+			discard;
+		}
+	}
+}
+
+void DoFog(inout vec4 SrcColour, float fogval)
+{
+	if (gm_PS_FogEnabled)
+	{
+		SrcColour = mix(SrcColour, gm_FogColour, clamp(fogval, 0.0, 1.0)); 
+	}
+}
+
+#define _YY_GLSLES_ 1
+//
+// Simple passthrough fragment shader
+//
+varying vec2 v_vTexcoord;
+varying vec4 v_vColour;
+
+uniform float g_Intensity;
+
+float YUVval(vec4 _rgb)
+{
+	return dot(vec3(0.299, 0.587, 0.114), _rgb.rgb);
+}
+
+void main()
+{
+	vec4 texcol = texture2D( gm_BaseTexture, v_vTexcoord );
+	float greyval = YUVval(texcol);	
+	vec3 greyCol = vec3(greyval,greyval,greyval);
+	vec3 finalCol = mix(texcol.rgb,greyCol, g_Intensity);
+    gl_FragColor = vec4(finalCol, texcol.a);
+}

@@ -1,0 +1,12 @@
+_arq = "akumu.ini";
+image_speed = 0;
+fadeSpeed = 0.008;
+quitSpeed = 0.02;
+image_alpha = 0;
+completed = 0;
+menuSelected = 0;
+selected = false;
+quit = false;
+total_slots = 15;
+global.any_save_exists = false;
+alarm[0] = 1;

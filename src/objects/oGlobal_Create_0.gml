@@ -1,0 +1,63 @@
+if (file_exists("READ ME.txt"))
+    file_delete("READ ME.txt");
+
+ini_open("READ ME.txt");
+file_write_all_text("READ ME.txt", "Messing with the savefile will corrupt it. If this happens, you should delete it.");
+ini_close();
+room_goto(rMenu);
+canCount = false;
+hours = 0;
+seconds = 0;
+minutes = 0;
+global.baseLight = 0.45;
+global.leave = 0;
+global.cooldown = false;
+global.cantKill = false;
+global.tutorial = 0;
+global.TEXTBOX_FONT = font_add_sprite(sMainFont, 32, true, 2);
+global.deathSound = false;
+global.maxPages = 1;
+global.crt = true;
+global.fullscreen = false;
+
+if (!file_exists("config.ini"))
+    scrSaveConfig();
+
+scrLoadConfig();
+shake = false;
+shake_time = 0;
+shake_magnitude = 0;
+shake_fade = 0.25;
+global.chase = 5;
+global.chase_interval = 180;
+global.chase_timer = 0;
+global.chase_max = global.chase;
+global.chasing = false;
+global.shouldStayonRoom = false;
+global.monsterX = 0;
+global.monsterY = 0;
+global.lastMonsterRoom = 0;
+global.isHiding = false;
+global.safe = false;
+inventory = ds_list_create();
+scrInitItems();
+global.debounce1 = false;
+global.debounce2 = false;
+global.debounce3 = false;
+global.debounce4 = false;
+global.basementpuzzlecomplete = false;
+global.current_code = "";
+global.dialogue = false;
+global.dialogue2 = false;
+myDeb = false;
+global.toiletCorrect = false;
+global.paperCorrect = false;
+global.sinkCorrect = false;
+global.allCorrect = false;
+global.allCorrectDebounce = false;
+global.unlockedCode = false;
+global.switchBooks = false;
+global.screwUsed = false;
+global.everythingCorrect = false;
+global.lightsOut = 0;
+global.atepizza = false;

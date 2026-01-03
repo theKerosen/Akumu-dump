@@ -1,0 +1,2 @@
+directionspawn = "LEFT";
+canSpawn = true;

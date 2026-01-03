@@ -1,0 +1,13 @@
+targetRoom = 0;
+targetX = 0;
+targetY = 0;
+targetFace = 0;
+myNumber = 0;
+lock = -4;
+doorTag = -4;
+canPlay = false;
+doorOpening = false;
+image_speed = 0;
+state = 0;
+myDialogue1 = "It's locked.";
+myDialogue2 = "Maybe I should find something to open it.";
