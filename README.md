@@ -6,8 +6,7 @@
 
 This repository serves as a technical case study in retrieving source code from compiled executables. It contains the raw Game Maker Language (GML) scripts, object definitions, and asset metadata extracted from the game "**Akumu**".
 
-> **Warning:** Static analysis of `oCredits` revealed persistent string literals referencing an entity known as **"Asset Bakery."**
->
+> Static analysis of `oCredits` revealed persistent string literals referencing an entity known as **"Asset Bakery."**
 > Despite these internal references, this entity **does not appear** in the game's public-facing credits sequence.
 > *   Did they do the work?
 > *   Were they erased from history?
@@ -31,7 +30,7 @@ Reverse engineering reveals not just the *how*, but the *why*—and sometimes, t
 In `oBasementFloor2`, room management is handled via a hardcoded O(n) check that lists every single room manually. If the developer adds one room and forgets to update this list, the object self-destructs.
 
 ```gml
-// Found in: src/Objects/oBasementFloor2_Step_0.gml
+// Found in: src/objects/oBasementFloor2_Step_0.gml
 if (room == rBasement9 || room == rBasement10 || room == rBasement11 ... ) {
     // Logic
 } else {
@@ -44,7 +43,7 @@ if (room == rBasement9 || room == rBasement10 || room == rBasement11 ... ) {
 The save system (`scrSaveGame`) avoids standard structs or arrays in favor of manually mapping variables to INI keys that form... sentences?
 
 ```gml
-// Found in: src/Scripts/scrSaveGame.gml
+// Found in: src/scripts/scrSaveGame.gml
 ini_write_real("stage1_1", "you", sink);
 ini_write_real("stage1_1", "shouldn't", toilet);
 ini_write_real("stage1_1", "be", paper);
@@ -55,7 +54,7 @@ ini_write_real("stage1_1", "here", all_);
 ### 3. Debug Artifacts
 The developer left a functional debug backdoor in the production build. *wowie.*
 ```gml
-// Found in: src/Objects/oGlobal_Step_0.gml
+// Found in: src/objects/oGlobal_Step_0.gml
 if (keyboard_check(vk_subtract)) {
     room_goto(rDebug); // Instantly teleports the player
 }
@@ -65,7 +64,7 @@ if (keyboard_check(vk_subtract)) {
 Static objects (Tables, Bookshelves, Beds) contain code in their `Step` event—which runs 60 times per second—solely to update their depth sorting.
 
 ```gml
-// Found in: src/Objects/oTable2_Step_0.gml
+// Found in: src/objects/oTable2_Step_0.gml
 // This table is stationary. It will never move. 
 // Yet, it recalculates its Z-ordering every single frame.
 if (normalDepth)
