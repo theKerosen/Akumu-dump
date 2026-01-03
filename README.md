@@ -6,12 +6,6 @@
 
 This repository serves as a technical case study in retrieving source code from compiled executables. It contains the raw Game Maker Language (GML) scripts, object definitions, and asset metadata extracted from the game "**Akumu**".
 
-> Static analysis of `oCredits` revealed persistent string literals referencing an entity known as **"Asset Bakery."**
-> Despite these internal references, this entity **does not appear** in the game's public-facing credits sequence.
-> *   Did they do the work?
-> *   Were they erased from history?
-> The bytecode knows the truth, even if the developer refuses to admit it.
-
 ## Technical Overview
 
 The primary objective was to perform static analysis on a compiled PE32 Waindows executable within a strict **Arch Linux** environment.
