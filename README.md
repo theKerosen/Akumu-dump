@@ -587,7 +587,7 @@ ini_write_real("stage1", "0", zero);
 
 </details>
 
-## 📁 Room Creation Codes
+## Room Creation Codes
 <details><summary>Click to expand Room Creation Codes</summary>
 
 - 📄 [bLoading_0_Create.gml](./src/rooms/bLoading_0_Create.gml)
@@ -789,4 +789,4 @@ ini_write_real("stage1", "0", zero);
 *   **QuickBMS:** Generic file extractor used for initial IFF chunk separation.
 
 ## Code & Asset Forensics
-Taking a look at how the game looks, it becomes clear that the developer used lots of assets from other games, but also created their own unique elements. The game's graphics are a mix of original art and assets from other games, while the audio is a combination of original sound effects and music from other sources. The physics and tweening systems are entirely outsourced, while the core logic is mostly organic spaghetti code. Overall, the game is a collection of other people's work held together by duct tape. This is not a destructive critique, but rather a constructive analysis of the game's strengths and weaknesses. The game's unique elements are well-designed and executed, but the reliance on other people's work can be seen as a weakness. The game's physics and tweening systems are also a weakness, as they are entirely outsourced.
+This is not a critique of the game's assets or code, but rather a constructive analysis of the game's strengths and weaknesses. The game's unique elements are well-designed and executed, but the reliance on other people's work can be seen as a weakness. The game's physics and tweening systems are also a weakness, as they are entirely outsourced.
